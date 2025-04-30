@@ -1,7 +1,6 @@
 use clap::Parser;
 use reqwest::header::{AUTHORIZATION, CONTENT_TYPE};
 use serde::Serialize;
-use std::env; // Not strictly needed if using clap's env feature directly, but good practice
 
 // Define the structure for command-line arguments
 #[derive(Parser, Debug)]
