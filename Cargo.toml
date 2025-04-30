@@ -1,0 +1,11 @@
+[package]
+name = "slackit"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive", "env"] } # Use latest 4.x version, enable derive and env features
+reqwest = { version = "0.12", features = ["json"] }     # Use latest 0.x version, enable json feature
+tokio = { version = "1", features = ["full"] }        # Use latest 1.x version, enable full features for async runtime
+serde = { version = "1.0", features = ["derive"] }    # For serializing JSON payload
+serde_json = "1.0"                                     # For handling JSON data
