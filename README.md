@@ -58,7 +58,7 @@ You can run the executable directly, providing the required information via comm
 **1. Using Command-Line Arguments:**
 
 ```bash
-./target/release/slack_poster \
+./target/release/slackit \
   --token "xoxb-YOUR_SLACK_BOT_TOKEN" \
   --channel "#your-channel-name" \
   --message "Hello, Slack! This is a test message from the Rust CLI."
@@ -75,7 +75,7 @@ export SLACK_TOKEN="xoxb-YOUR_SLACK_BOT_TOKEN"
 export SLACK_CHANNEL="#your-channel-name" # or C12345ABCDE
 
 # Now run the command, only providing the message
-./target/release/slack_poster --message "This message uses token and channel from environment variables."
+./target/release/slackit --message "This message uses token and channel from environment variables."
 ```
 
 3. Using a Mix:
@@ -87,7 +87,7 @@ You can combine environment variables and arguments. Arguments typically overrid
 export SLACK_TOKEN="xoxb-YOUR_SLACK_BOT_TOKEN"
 
 # Provide channel and message via arguments
-./target/release/slack_poster --channel "#another-channel" --message "Token from env, channel and message from args."
+./target/release/slackit --channel "#another-channel" --message "Token from env, channel and message from args."
 ```
 
 ## Configuration Options
