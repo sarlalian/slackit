@@ -1,0 +1,8 @@
+# Ignore git directory
+.git
+# Ignore build artifacts if they exist locally
+target/
+# Ignore the Dockerfile itself and README
+Dockerfile
+*.dockerignore
+README.md
